@@ -4,7 +4,19 @@ public class Turma {
 
     int alunos;
 
-    public Turma(String nome, Professores nivelGraduacao,  int alunos) {
+    public Turma(int alunos) {
+        this.alunos = alunos;
+    }
+
+    public int getAlunos() {
+        return alunos;
+    }
+
+    public void setAlunos(int alunos) {
+        this.alunos = alunos;
+    }
+
+    public Turma(String nome, Professores nivelGraduacao, int alunos) {
 
         if ((alunos >40) && (nivelGraduacao.equals("Doutorado"))) {
             System.out.println("O professor: " + nome + "Pode assumir a turma");
