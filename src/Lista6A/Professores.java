@@ -2,7 +2,7 @@ package Lista6A;
 
 public class Professores extends Funcionarios {
 
-    String nivelGraduacao;
+    private String nivelGraduacao;
     String disciplina;
     int qtdAlunos;
     int qtdTurma;

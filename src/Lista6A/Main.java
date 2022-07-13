@@ -8,6 +8,7 @@ public class Main {
         p1.setSalario(1000);
         p1.aumentoSalario();
         p1.adicionaTurma(2);
+        p1.setNivelGraduacao("Mestrado");
         System.out.println("Nome Professor: " + p1.getNome());
         System.out.println("Salário professor: " +p1.getSalario());
         System.out.println("Salário aumentado: " + p1.aumentoSalario());
@@ -30,5 +31,9 @@ public class Main {
         System.out.println("Salário administrativo: " +a1.getSalario());
         System.out.println("Salário aumentado: " + a1.aumentoSalario());
         System.out.println();
+
+        Turma t1 = new Turma();
+        t1.verificaRequisito("Licenciatura", 25);
+
     }
 }
